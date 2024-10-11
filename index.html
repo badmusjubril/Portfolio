@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-b"></i>
+                    <div class="logo-text">Badmus Jubril</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <ul class="navlinks">
+                      
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="img.jpg" alt="">
+                </div>
+                <div class="hero-text">
+                    <h5>i'm <span class="input">Web developer</span></h5>
+                
+                    <h1>Badmus Jubril</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi accusamus tempore tempora itaque enim voluptatem commodi odit natus ullam! Excepturi mollitia obcaecati provident pariatur?</p>
+                
+                    <div class="btn-group">
+                       
+                        <a href="#" class="btn-active">Download CV</a>
+                        <a href="#" class="btn">Contact us</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+       /** creating button click show hide navbar **/
+       var togglebtn=document.querySelector(".togglebtn");
+       var nav=document.querySelector(".navlinks");
+       var links=document.querySelector(".navlinks li");
+       togglebtn.addEventListener("click", function(){
+           this.classList.toggle("click");
+           nav.classList.toggle("open");
+       })
+       var typed=new Typed(".input",{
+           strings:["Frontend Developer","UX Designer","Web Developer"],
+           typedSpeed:70,
+           backSpeed:55,
+           loop:true
+       })
+    </script>
+</body>
+</html>
